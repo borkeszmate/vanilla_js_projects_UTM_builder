@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>UTM Parameter Builder</title>
+
+    <style>
+     #resultsDiv, #loaderSection{
+      display: none;
+     }
+    </style>
+  </head>
+  <body>
+   <!-- Jumbotron -->
+      <div class="container">
+       <div class="row">
+        <div class="jumbotron bg-white text-center">
+         <h1 class="display-4">UTM Parameter Builder</h1>
+        </div>
+       </div>
+       <!-- Card section -->
+        <div class="row">
+         <div class="col" id="inputSection">
+          <div class="card" id="inputCard">
+           <div class="card-header">
+            <h5>Build your custom UTM parameter parameters!</h5>
+           </div>
+           <div class="card-body">
+            <form action="#" id="inputForm">
+              <div class="input-group">
+                <span class="input-group-text">URL</span>
+               <input type="text" class="form-control" placeholder="Place your destination URL here!" id="urlInputField">
+              </div>
+              <hr class="my-3">
+
+              <div class="input-group my-3">
+                <span class="input-group-text">source</span>
+               <input type="text" class="form-control" placeholder="Place your source here!" id="sourceInputField">
+              </div>
+
+              <div class="input-group my-3">
+                <span class="input-group-text">medium</span>
+               <input type="text" class="form-control" placeholder="Place your medium here!" id="mediumInputFiled">
+              </div>
+              
+
+              <div class="input-group my-3">
+                <span class="input-group-text">campaign_name</span>
+               <input type="text" class="form-control" placeholder="Place your medium here!" id="campaign_nameInputField">
+              </div>
+
+              <div class="input-group my-3">
+               <input type="submit" class="btn btn-outline-success btn-block" value="Generate">
+              </div>
+
+           </form>
+           </div>
+          </div>
+        </div>
+       </div>
+      
+      
+      <!-- Loader icon -->
+      <div class="row" id="loaderSection">
+        <div class="col">
+        <div class="text-center">
+          <img src="img/loader.svg" alt="loader icon" class="rounded" >
+        </div>
+      </div>
+      </div>
+      <!-- Displaying results -->
+      <div class="row">
+        <div class="col">  
+          <div class="card" id="resultsDiv"></div>
+        </div>
+      </div>
+    </div>
+        
+</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
